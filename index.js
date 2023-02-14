@@ -1,4 +1,5 @@
 import diagonalDifference from './diagonalDifference';
+import minMaxSum from './minMaxSum';
 
 const result = diagonalDifference([
   [11, 2, 4],
@@ -6,4 +7,4 @@ const result = diagonalDifference([
   [10, 8, -12],
 ]);
 
-console.log(result);
+minMaxSum([2, 1, 6, 2, 8]);
