@@ -1,12 +1,13 @@
 export default function minMaxSum(arr) {
   const sortedArr = arr.sort((a, b) => a - b);
-  const minArr = [...sortedArr];
-  const maxArr = [...sortedArr];
-  maxArr[0] = 0;
-  minArr[sortedArr.length - 1] = 0;
+  let number = sortedArr[0];
 
-  const minSum = minArr.reduce((prevVal, curVal) => prevVal + curVal);
-  const maxSum = maxArr.reduce((prevVal, curVal) => prevVal + curVal);
+  sortedArr[0] = 0;
+  const maxSum = sortedArr.reduce((prevVal, curVal) => prevVal + curVal);
+  sortedArr[0] = number;
+  number = sortedArr[sortedArr.length - 1];
+  sortedArr[sortedArr.length - 1] = 0;
+  const minSum = sortedArr.reduce((prevVal, curVal) => prevVal + curVal);
 
   console.log(minSum, maxSum);
 }
