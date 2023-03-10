@@ -5,6 +5,7 @@ import timeConversion from './timeConversion';
 import gradingStudents from './gradingStudents';
 import appleOrange from './appleOrange';
 import numberLineJumps from './numberLineJumps';
+import between2Sets from './between2Sets';
 
 const result = diagonalDifference([
   [11, 2, 4],
@@ -18,3 +19,4 @@ timeConversion('04:32:21AM');
 gradingStudents([38, 78, 72, 21]);
 appleOrange(7, 10, 4, 12, [2, 3, -4], [3, -2, -4]);
 numberLineJumps(0, 3, 4, 2);
+between2Sets([3,9,6], [36,72]);
