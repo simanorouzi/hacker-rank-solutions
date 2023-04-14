@@ -7,6 +7,7 @@ import appleOrange from './appleOrange';
 import numberLineJumps from './numberLineJumps';
 import between2Sets from './between2Sets';
 import breackingRecords from './breackingRecords';
+import subArrayDivision from './subArrayDivision';
 
 const result = diagonalDifference([
   [11, 2, 4],
@@ -22,3 +23,4 @@ appleOrange(7, 10, 4, 12, [2, 3, -4], [3, -2, -4]);
 numberLineJumps(0, 3, 4, 2);
 between2Sets([3, 9, 6], [36, 72]);
 breackingRecords([3, 4, 21, 36, 10, 28, 35, 5, 24, 42]);
+subArrayDivision([1,2,1,3,2],3,2);
